@@ -197,7 +197,7 @@
          
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
-                <h3 class="text-sm-right">Discover & Review</h3>
+                <h2 class="text-sm-right">Discover & Review</h2>
             </div>
             <div class="col">
                 <div class="media">
@@ -284,7 +284,11 @@
                     $(".carousel").carousel("pause");
                     $("#carouselButton").children("i").removeClass("fa-pause");
                     $("#carouselButton").children("i").addClass("fa-play");
-                } 
+                }  else {
+                    $(".carousel").carousel("cycle");
+                    $("#carouselButton").children("i").removeClass("fa-play");
+                    $("#carouselButton").children("i").addClass("fa-pause"); 
+                }
             });
         });
     </script>
